@@ -225,8 +225,6 @@ namespace Spearware.ProgressView
             var progressPct = Progress / StartAngle;
             var pinnedProgress = Math.Min(Math.Max(progressPct, 0.0f), 1.0f);
 
-            Console.WriteLine("From {0} to {1}", fromProgress, toProgress);
-
             if(toProgress > fromProgress) //Don't want to animate between 360 to 0
             {
                 if (animate)
